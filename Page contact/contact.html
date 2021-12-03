@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="icon" href="img/globe.png" type="image/png-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">        
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-around align-items-center shadow">
+                <di class="p-2">
+                    <a href="../Page d'acceuil/index.html" class="navbar-brand text-dark text-uppercase"><img class="img-logo" src="img/6523c80d-266a-4fd6-8dd0-350b9ad01eb1_200x200.png" alt=""></a>
+                </di>
+                <div class="dropleft d-flex">
+                    <button class="btn btn-light dropdown-toggle border bg-primary text-white" type="button" data-toggle="dropdown">FR</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> <img  src="img/flag-com.svg"  alt="usa"> USA</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"> <img  src="img/flag-br.svg"  alt="usa"> USA</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"> <img  src="img/flag-it.svg"  alt="usa"> USA</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"> <img  src="img/flag-uk.svg"  alt="usa"> USA</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"> <img  src="img/flag-es.svg"  alt="usa"> USA</a></li>
+                    </ul>
+
+
+
+                    <div id="html" class="d-flex ml-1">
+                        <button data-toggle="modal" data-target="#formulaire" class="btn btn-primary">Mon Compte   <i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                      <div class="modal fade" id="formulaire">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title text-uppercase text-primary">Bonjour !</h4>              
+                              <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mb-4" style="color: #333333c4;">Connexion | Inscription</h4>
+                                <form action="#" method="post">
+                                <fieldset class="d-flex flex-column justify-content-center">
+                                    <label for="user">
+                                        <input class="form-control" type="email" for="user" id="user" name="user" placeholder="Nom d'utilisateur" required>
+                                    </label>
+                                    <label for="mdplog"> 
+                                        <input class="form-control" type="password" for="mdplog" id="mdplog" name="mdplog" placeholder="Mot de passe" required>
+                                    </label>
+                                    <label for="sendlog">
+                                        <input class="form-control btn-primary" type="submit" for="sendlog" id="sendlog" value="Connexion">
+                                    </label>
+                                    <label for="forget"><span><a href="#" class="form-control mt-2"> Mot de passe oublié ? </a></span></label>
+                                </fieldset>
+                                  </form>
+
+                         
+                                  <div class="dropdown-divider"></div> 
+                                
+
+                                  <fieldset class="text-center">
+                                    <input class="btn btn-light mb-2 bg-primary text-white" type="submit" for="sendlog" id="sendlog" value="Inscription">
+                                </fieldset>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+    
+            <div class="row justify-content-center p-5 bg-ground">
+                <h1 class="text-uppercase font-weight-bold text-white">Contact</h1>
+            </div>
+            
+      <main class="row justify-content-center">
+
+        <div class="row justify-content-center mt-4 mb-4 bg-info p-4">
+            <video class="video-fluid z-depth-1" autoplay loop controls muted>
+             <source src="Video/Coronavirus Covid19  Connatre les gestes barrieres pour se proteger.mp4" type="video/mp4" />
+             </video>
+        </div>
+        
+            <div class="container border  p-5">
+              <h2 class="mt-4">Formulaire de contact</h2>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Nom</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Entrer votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput1">Prénom</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Entrer votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Adresse email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre adresse mail" required>
+                      <small id="emailHelp" class="form-text text-muted">Votre adresse mail ne sera jamais partager.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputTel">Téléphone</label>
+                      <input type="tel" class="form-control" id="exampleInputTel" placeholder="Entrer votre numéro de téléphone" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Entrer votre message"></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark bg-primary mb-5">Envoyer</button>
+                  </form>  
+            </div>
+      </main>
+
+
+       <!------------------------------------- FOOTER  --------------------------------->
+                    
+       <div class="container-fluid main-footer">
+        <div class="row">
+        <div class="col-md-6 p-4">
+        <nav class="nav justify-content-center">
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a class="text-white" href="#">Conditions Géneral de ventes</a></li>
+                    <li><a href="../Page mentions_legales/mentions_legales.html" class="text-white">Mentions Légales</a></li>
+                    <li><a href="../Page mentions_legales/mentions_legales.html" class="text-white">Politiques de Confindelités</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-md-6 p-4">
+            <nav class="nav justify-content-center">
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="text-white" href="../a_propos/a_propos.html">A propos</a></li>
+                        <li><a href="../Page contact/contact.html" class="text-white">Contact</a></li>
+                        <li><a href="../Page comparateur/comparateur.html" class="text-white">Comparateur</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</div>
+
+        
+        
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+        
+        </body>
+        </html>

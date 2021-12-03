@@ -1,0 +1,331 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100%;
+    font-size: 1rem;
+}
+body{
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    flex-grow: 1;
+}
+
+.img-logo{
+    width: 120px;
+}
+
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1113&q=80");
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+
+/* 
+    clip-path: polygon(100% 0, 100% 90%, 54% 100%, 0 100%, 0 0) */
+}
+
+.container-fluid{
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container-1{
+    background-color: rgba(0, 0, 0, 0.267);
+    box-shadow: 0 0 3px #f1f1f1;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 80px;
+   width: 80%;
+   padding: 50px;
+}
+
+.formini {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.trait{
+    border: 1px solid #ffffff3a;
+    width: 900px;
+    margin: 30px auto;
+}
+
+.img-icon{
+    width: 38px;
+
+}
+
+.modal-body{
+    background-image: url("../img/margo-brodowicz-KZHhnb6XsQI-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/********************************* DEBUT ANIMATION  ******************************/
+
+#cloud {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1 px solid #999;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#cloud1 {
+    z-index: 1;
+    position: absolute;
+    left:0px;
+    top: 1.5em;
+    font-size: 2em;
+    color: #82d4e2;
+}
+#cloud2 {
+    z-index: 2;
+    position: absolute;
+    left:-20px;
+    top:2em;
+    font-size: 1em;
+    font-weight: 900;
+    color: #666;
+}
+#cloud3 {
+    z-index: 1;
+    position: absolute;
+    left:-50px;
+    bottom:.5em;
+    font-size: 2.5em;
+    color: #a8e4ec;  
+}
+#cloud4 {
+    z-index: 2;
+    position: absolute;
+    left:-10px;
+    top:3em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #999;
+}
+#cloud5 {
+    z-index: 2;
+    position: absolute;
+    left:-60px;
+    top:2.8em;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #bababa;
+}
+#cloud6 {
+    z-index: 2;
+    position: absolute;
+    left:-40px;
+    top:0.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #cacaca;
+}
+
+#cloud1 {
+    z-index: 1;
+    position: absolute;
+    left:0px;
+    top:1.5em;
+    font-size: 2em;
+    color: #82d4e2;
+    animation: moveCloud 60s linear infinite;
+    -webkit-animation: moveCloud 60s linear infinite;
+    -moz-animation: moveCloud 60s linear infinite;
+}
+#cloud2 {
+    z-index: 2;
+    position: absolute;
+    left:-20px;
+    top:2em;
+    font-size: 1em;
+    font-weight: 900;
+    color: #666;
+    animation-delay:7s;
+    -webkit-animation-delay:7s;
+    -moz-animation-delay: 7s;
+    animation: moveCloud 50s ease-in-out infinite;
+    -webkit-animation: moveCloud 50s ease-in-out infinite;
+    -moz-animation: moveCloud 50s ease-in-out infinite;
+}
+#cloud3 {
+    z-index: 1;
+    position: absolute;
+    left:-50px;
+    bottom:.5em;
+    font-size: 2.5em;
+    color: #a8e4ec;    
+    animation: moveCloud 55s ease-out infinite;
+    -webkit-animation: moveCloud 55s ease-out infinite;
+    -moz-animation: moveCloud 55s ease-out infinite;
+}
+#cloud4 {
+    z-index: 2;
+    position: absolute;
+    left:-10px;
+    top:3em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #999;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay: 1s;
+    animation: moveCloud 50s ease-in-out infinite;
+    -webkit-animation: moveCloud 50s ease-in-out infinite;
+    -moz-animation: moveCloud 50s ease-in-out infinite;
+}
+#cloud5 {
+    z-index: 2;
+    position: absolute;
+    left:-60px;
+    top:2.8em;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #bababa;
+    animation: moveCloud 70s ease-out infinite;
+    -webkit-animation: moveCloud 70s ease-out infinite;
+    -moz-animation: moveCloud 70s ease-out infinite;
+}
+#cloud6 {
+    z-index: 2;
+    position: absolute;
+    left:-40px;
+    top:0.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #cacaca;
+    animation-delay:4s;
+    -webkit-animation-delay:4s;
+    -moz-animation-delay: 4s;
+    animation: moveCloud 55s ease-in infinite;
+    -webkit-animation: moveCloud 55s ease-in infinite;
+    -moz-animation: moveCloud 55s ease-in infinite;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translate(1250px);
+    }
+    100% {
+        transform: translate(-50px);
+    }
+}
+/********************************************** FIN D'ANIMATION **********************************/
+
+/* ************************************** DESTINATION DE REVES ************************************ */
+
+.p10{
+    position: absolute;
+    background-color: orange;
+    right: 0;
+}
+
+
+.img-point{
+    width: 50px;
+    text-align: center;
+}
+
+.card{
+    transition: all ease-out 0.6s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+.l-t{
+    letter-spacing: 3px;
+    
+}
+
+/* ************************************** DESTINATION DE REVES ************************************ */
+
+
+
+/* ************************************** BANNIERE PERSONNAGE EN VACANCES ************************************ */
+
+.img-action{
+    width: 100%;
+    height: 400px;
+}
+
+.row-ban{
+    background-image: url("https://images.pexels.com/photos/4453153/pexels-photo-4453153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.guillemet::after{
+    content: "»";
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+
+/* ****************** FIN BANNIERE PERSONNAGE EN VACANCES *************************** */
+
+
+/* ************************************** FOOTER ************************************ */
+
+.main-footer{
+    background-color: #48c2d4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.row{
+    margin: 0;
+}
+/* ************************************** FOOTER ************************************ */
+
+
+@media all and (max-width:768px){
+
+    .active {
+        display: flex;
+    }   
+}
+
+
+
+
